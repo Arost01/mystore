@@ -11,7 +11,7 @@
   5 不存在于购物车的数组中 直接给购物车数组添加一个新元素 新元素带上购买数量属性 num 重新吧购物车数组 填充回缓存中
   6 弹出提示
 4  商品收藏
-  1 叶敏啊onShow的时候 加载缓存中的商品收藏数据
+  1 页面onShow的时候 加载缓存中的商品收藏数据
   2 判断商品是否被收藏
     1 是 改变页面的图标
     2 不是。。。
@@ -22,6 +22,7 @@
 */
 import {request}from "../../request/index.js";
 import regeneratorRuntime from '../../lib/runtime/runtime';
+import { showToast } from "../../utils/asyncWx.js";
 Page({
 
   /**
@@ -141,6 +142,11 @@ Page({
     this.setData({
       isCollect
     })
+  },
+
+  //购买按钮
+   handleBuy(){
+     showToast({title:"请联系：13275750102"})
   }
   
 })

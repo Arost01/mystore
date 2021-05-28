@@ -104,6 +104,7 @@ Page({
           })
 
   },
+  
   //左侧菜单的点击事件
   handleItemTap(e){
   /* 
